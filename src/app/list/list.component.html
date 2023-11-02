@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TecnoServ: Login y Register</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <br>
+        <a href="index.html">INICIO</a>
+        <a href="about.html">MAS DE NOSOTROS</a>
+        <a href="service.html">SERVICIOS</a>
+    </header>
+    <main>
+        <div class="contenedor__todo">
+            <h2>
+                Mis Servicios
+            </h2>
+            <br>
+              <form [formGroup]="formUsuario" (ngSubmit)="sendDatos()">
+                <label for="" class="form-label">Ingresa tu numero de Documento para consultar tus Servicios: </label>
+                <input type="text" id="" class="form-control" formControlName="id" placeholder="Numero de Documento">
+                <button name="" type="submit" class="btn btn-primary">Buscar</button>
+              </form>
+            <br>
+            <div class="tabla">
+              <table class="table">
+                <thead>
+                    <tr>
+                      <th>ID servicio:</th>
+                      <th>Descripcion:</th>
+                      <th>Descargar Registro de Servicio:</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let usuarios of usuario">
+                        <td> {{usuarios.id}}  </td>
+                        <td> {{usuarios.descripcion_servicio}} </td>
+                        <td> {{usuarios.hoja_registro}} </td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
