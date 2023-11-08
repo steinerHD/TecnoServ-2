@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DosComponent } from './dos.component';
+import { OrderComponent } from './order.component';
 
-describe('DosComponent', () => {
-  let component: DosComponent;
-  let fixture: ComponentFixture<DosComponent>;
+describe('OrderComponent', () => {
+  let component: OrderComponent;
+  let fixture: ComponentFixture<OrderComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [DosComponent]
+      declarations: [OrderComponent]
     });
-    fixture = TestBed.createComponent(DosComponent);
+    fixture = TestBed.createComponent(OrderComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

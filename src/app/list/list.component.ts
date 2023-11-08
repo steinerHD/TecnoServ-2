@@ -14,7 +14,7 @@ export class ListComponent {
   formUsuario:FormGroup<any>;
   usuario: any;
 
-  constructor(    public form: FormBuilder,
+  constructor(public form: FormBuilder,
     public ruteador: Router,
     private CrudService: CrudServiceService) {
     this.formUsuario = this.form.group({

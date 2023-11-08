@@ -1,27 +1,29 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { usuario } from './usuario';
+import { usuario } from './objetos/usuario';
+import { datos } from './objetos/datos';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CrudServiceService {
-  API:string = 'http://localhost/TecnoServ/PHP/'
+  APIserv:string = 'http://localhost/TecnoServ/Servicios/';
+  APIsol:string = 'http://localhost/TecnoServ/Solicitar/'
 
   constructor(private HttpUsuario:HttpClient) {
    }
 
 
-   AgregarEmpleados(datosUsuario:usuario):Observable<any> {
-      return this.HttpUsuario.post(this.API + "?insertar=1", datosUsuario);
+   AgregarDatos(datosUsuario:datos):Observable<any> {
+      return this.HttpUsuario.post(this.APIsol + "?insertar=1", datosUsuario);
   }
 
-  ObtenerEmpleados() {
-    return this.HttpUsuario.get(this.API);
+  ObtenerDatos() {
+    return this.HttpUsuario.get(this.APIsol);
   }
 
   ObtenerUsuario(id:any) {
-    return this.HttpUsuario.get(this.API + "?consultar="+id)
+    return this.HttpUsuario.get(this.APIserv + "?consultar="+id)
   }
 }

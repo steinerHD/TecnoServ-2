@@ -6,14 +6,14 @@ import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ListComponent } from './list/list.component';
-import { DosComponent } from './dos/dos.component';
+import { OrderComponent } from './order/order.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ListComponent,
-    DosComponent
+    OrderComponent
   ],
   imports: [
     BrowserModule,
