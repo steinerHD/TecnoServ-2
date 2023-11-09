@@ -26,4 +26,8 @@ export class CrudServiceService {
   ObtenerUsuario(id:any) {
     return this.HttpUsuario.get(this.APIserv + "?consultar="+id)
   }
+
+  BorrarDatos(id:number) {
+    return this.HttpUsuario.get(this.APIsol + "?borrar="+ id)
+  }
 }
