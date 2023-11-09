@@ -5,10 +5,7 @@
     text-decoration: none;
     font-family: "Roboto", sans-serif;
   }
-<<<<<<< Updated upstream
-  
-  
-=======
+
 
   body {
     background-image: url(../../assets/Login.jpeg);
@@ -20,7 +17,6 @@
     height: 100%;
   }
 
->>>>>>> Stashed changes
   header {
     position: relative;
     min-height: 10vh;
