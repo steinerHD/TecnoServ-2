@@ -8,6 +8,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ListComponent } from './list/list.component';
 import { OrderComponent } from './order/order.component';
 import { SolicitudesComponent } from './solicitudes/solicitudes.component';
+import { PrestadoComponent } from './prestado/prestado.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { SolicitudesComponent } from './solicitudes/solicitudes.component';
     AppComponent,
     ListComponent,
     OrderComponent,
-    SolicitudesComponent
+    SolicitudesComponent,
+    PrestadoComponent
   ],
   imports: [
     BrowserModule,

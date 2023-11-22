@@ -10,7 +10,6 @@ import { CrudServiceService } from '../service.service';
 })
 export class OrderComponent {
   formDatos:FormGroup<any>
-  dato: any;
 
   constructor(public form:FormBuilder,
     ruteador:Router,

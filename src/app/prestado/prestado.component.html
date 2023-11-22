@@ -1,0 +1,74 @@
+<body>
+
+  <header>
+    <br>
+    <a href="index.html" class="submit">INICIO</a>
+    <a href="about.html" class="submit">MAS DE NOSOTROS</a>
+    <a href="service.html" class="submit">SERVICIOS</a>
+  </header>
+  <main>
+    <div class="login-box">
+      <h2>
+        Registro de servicios
+      </h2>
+      <br>
+      <form [formGroup]="formDatos" (ngSubmit)="enviarDatos()">
+        <div class="user-box">
+            <input type="text" name="" required="" formControlName="id">
+            <label>ID</label>
+          </div>
+        <div class="user-box">
+          <input type="text" name="" required formControlName="cliente_ID">
+          <label>ID Cliente</label>
+        </div>
+        <div class="user-box">
+          <input type="text" name="" required formControlName="empleado_ID">
+          <label>ID Empleado</label>
+        </div>
+        <h2>
+          Selecciona el tipo de servicio que se brindo
+        </h2>
+          <div class="Usuario-box">
+              <select name="tipo-de-servicio" id="tipo-de-servicio" formControlName="servicio_ID">
+                <option value="" disabled selected>TIPO DE SERVICIO</option>
+                <option value="Revisión de equipos">Revisión de equipos</option>
+                <option value="Instalación de sistemas operativos">Instalación de sistemas operativos</option>
+                <option value="Instalación de Office">Instalación de Office</option>
+                <option value="Instalación de programas">Instalación de programas</option>
+                <option value="Limpieza de equipos">Limpieza de equipos</option>
+                <option value="Combo sofware">Combo sofware</option>
+                <option value="Combo sofware">Combo sofware</option>
+                <option value="Combo mantenimiento general">Combo mantenimiento general</option>
+                <option value="Cableado de red">Cableado de red</option>
+                <option value="Instalación de Cámaras">Instalación de Cámaras</option>
+                <option value="Manteniomiento de redes">Manteniomiento de redes</option>
+                <option value="Red LAN">Red LAN</option>
+              </select>
+          </div>
+        <br>
+        <div class="user-box">
+          <h2>Fecha servicio</h2>
+          <input type="text" name="" required="" formControlName="fecha_servicio">
+          <label></label>
+        </div>
+        <div class="user-box">
+          <input type="text" name="" formControlName="descripcion_servicio">
+          <label>Descripción Servicio</label>
+        </div>
+        <div class="user-box">
+          <h2>Hoja de Registro</h2>
+          <input type="file" name="" id="" formControlName="hoja_registro">
+          <label></label>
+        </div>
+        <button href="#" class="submit" type="submit">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          Submit
+        </button>
+    </form>
+    </div>
+  </main>
+</body>
+
